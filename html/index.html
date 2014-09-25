@@ -1,0 +1,114 @@
+<?php 
+session_start();
+if(isset($_SESSION["username"])){
+header("location:indexUsuario.php");
+}
+?>
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58475 -->
+    <meta charset="utf-8">
+    <title>Iniciar Sesion</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="style.responsive.css" media="all">
+
+
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="script.responsive.js"></script>
+	
+	<style type="text/css">
+	.botton{
+	color: #ff6600;
+	}
+	</style>
+	
+</head>
+<body>
+<div id="art-main">
+    <div class="art-sheet clearfix">
+<header class="art-header clearfix">
+
+    <div class="art-shapes">
+<h1 class="art-headline" data-left="1.09%">
+    <a href="#">DomoSys</a>
+</h1>
+<h2 class="art-slogan" data-left="1.45%">Smart Home</h2>
+
+
+            </div>
+
+<nav class="art-nav clearfix">
+	<ul class="art-hmenu"><li><a href="QuienesSomos.html" class="active">Quienes somos</a></li></ul> 
+    <ul class="art-hmenu"><li><a href="Servicios.html" class="active">Servicios</a></li></ul> 
+    </nav>
+
+                    
+</header>
+<br>
+<br>
+<h2 class="art-postheader">Iniciar Sesion</h2>
+<br>
+<div align="center">
+<table  class="TablaFormulario" >
+					<!--<form method="post" name="Iniciar Sesion" >
+						
+						<tr>
+							<td><b>Nombre Usuario</b></td>
+							<td><input type="text" name="usuario" /></td>
+						</tr>
+						<tr>
+							<td align="center"><b>Clave:</b></td>
+							<td><input type="password" name="pass"/></td>
+						</tr>
+						<tr>
+							<td align="center">
+							<button class="botton" type="submit" name="aceptar" action="D:\Johnsana\VIII\Proyecto III\Sitio_Web_DomoSys\validar.php">Aceptar</button>
+							
+							</td> 
+							<td align="center">
+							
+							<button class="botton" type="reset" name="Cancelar">Cancelar</button></div>
+							</td>
+							
+						</tr>
+					</form>-->
+					
+					<form name="form1" action="valida.php" method="post">
+								<tr>				
+									<td><b>Ingrese Usuario </b></td>
+									<td><input type="text" name="user" /></td>
+							   </tr>
+							   <tr>
+								   <td><b>Ingrese Password</b></td>
+								   <td><input type="password" name="pass" /></td>
+							   </tr>
+								<tr>
+								<td><input type="submit" name="btnenviar" value="Enviar" /></td>
+								<td><input type="reset" name="limpiar" value="Cancelar" /></td>
+								</tr>
+					</form>
+				</table>
+</div>
+<div class="art-layout-wrapper clearfix">
+                <div class="art-content-layout">
+                    <div class="art-content-layout-row">
+                        <div class="art-layout-cell art-content clearfix"><article class="art-post art-article">
+                                                
+                <div class="art-postcontent art-postcontent-0 clearfix"></div>
+</article></div>
+                    </div>
+                </div>
+            </div><footer class="art-footer clearfix">
+</footer>
+
+    </div>
+</div>
+
+
+</body></html>
